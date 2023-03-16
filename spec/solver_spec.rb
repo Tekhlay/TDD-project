@@ -18,10 +18,10 @@ describe Solver do
     end
 
     it 'should display the reverse of the given string' do
-        expect(@solver.reverse('hello')).to eq('olleh')
-        expect(@solver.reverse('world')).to eq('dlrow')
-        expect(@solver.reverse('Tekhlay')).to eq('yalhkeT')
-        expect(@solver.reverse('Tariq')).to eq('qirat')
-        end
+      expect(@solver.reverse('hello')).to eq('olleh')
+      expect(@solver.reverse('world')).to eq('dlrow')
+      expect(@solver.reverse('Tekhlay')).to eq('yalhkeT')
+      expect(@solver.reverse('Tariq')).to eq('qiraT')
+    end
   end
 end
