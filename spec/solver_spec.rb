@@ -20,6 +20,12 @@ RSpec.describe Solver do
         expect(@solver.factorial(6)).to eq(720)
       end
 
+      context 'when given a negative integer' do
+        it 'raises an ArgumentError' do
+          expect { @solver.factorial(-1) }.to raise_error(ArgumentError, 'Number must be a non-negative integer')
+        end
+      end
+
       it 'should display the reverse of the given string' do
         expect(@solver.reverse('hello')).to eq('olleh')
         expect(@solver.reverse('world')).to eq('dlrow')
