@@ -37,7 +37,7 @@ RSpec.describe Solver do
         expect(solver.fizzbuzz(45)).to eq('fizzbuzz')
       end
     end
-    
+
     context 'when given a number divisible by 3' do
       it 'returns fizz' do
         expect(solver.fizzbuzz(3)).to eq('fizz')
@@ -45,7 +45,7 @@ RSpec.describe Solver do
         expect(solver.fizzbuzz(21)).to eq('fizz')
       end
     end
-    
+
     context 'when given a number divisible by 5' do
       it 'returns buzz' do
         expect(solver.fizzbuzz(5)).to eq('buzz')
@@ -53,7 +53,7 @@ RSpec.describe Solver do
         expect(solver.fizzbuzz(25)).to eq('buzz')
       end
     end
-    
+
     context 'when given a number not divisible by 3 or 5' do
       it 'returns the number as a string' do
         expect(solver.fizzbuzz(1)).to eq('1')
